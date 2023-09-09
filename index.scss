@@ -1,0 +1,94 @@
+// VARIABLES
+
+$primary-color: rgb(154,78,174);
+$secondary-color: rgb(50, 23, 77);
+$third-color: rgb(191, 148, 228);
+$fourth-color: rgb(220, 208, 255);
+$accent-color: rgb(253, 85, 225);
+$text-color: rgb(248, 234, 234);
+$hover1-color: rgb(1, 11, 14);
+$button-color: rgb(123, 20, 155);
+$footer-color: rgb(154, 78, 174);
+
+$main-font: "Sofia", sans-serif;
+$body-font: 'Courier New', Courier, monospace;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+ font-family: $body-font;
+}
+
+header {
+  font-family: $main-font;
+  border: 5px outset $accent-color; 
+  background-color: $primary-color;
+  padding: 6px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.hover-button {
+  width: 200px;
+  border-radius: 25px;
+  font-family: $main-font;
+  font-size: 1.5rem;
+  font-weight: 350;
+  border: 2.5px solid $accent-color;
+  background: transparent;
+  color: $button-color;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.hover-button:hover {
+  border-color: $accent-color;
+  background: $hover1-color;
+  color: $button-color;
+  font-weight: 600;
+  transition: all 0.5s ease-out;
+}
+.wrapper {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+nav {
+  -webkit-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
+  background: $third-color;
+  padding: 30px;
+  border: 6px outset $hover1-color;
+}
+
+article {
+  -webkit-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
+  text-align: center;
+  border: 6px outset $footer-color;
+  background-color: $fourth-color;
+  padding: 100px;
+}
+
+a:link, a:visited {
+  background-color: rgb(154,78,174)
+  color black;
+  border: 2px solid rgb(253, 85, 225);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
